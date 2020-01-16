@@ -1,0 +1,172 @@
+.AddCampusModal {
+  .error {
+    height: 20px;
+    margin-bottom: -35px;
+    color: #ff6e4a;
+  }
+  :global {
+    .ant-modal-close-x {
+      width: 36px;
+      height: 32px;
+      font-size: 12px;
+      line-height: 32px;
+    }
+    // .ant-form-item-required::before {
+    //   display: none;
+    // }
+    // .ant-form-item-required::after {
+    //   display: inline-block;
+    //   margin-right: 4px;
+    //   color: #f5222d;
+    //   font-size: 14px;
+    //   font-family: SimSun, sans-serif;
+    //   line-height: 1;
+    //   content: '*';
+    // }
+    .ant-row {
+      display: flex;
+      border-bottom: 1px solid #e5e5e5;
+      .ant-form-item-label {
+        flex: 0 0 90px;
+        width: 90px;
+      }
+      .ant-form-item-control-wrapper {
+        flex: 1;
+        input {
+          border: 0;
+          outline: none;
+          box-shadow: 0 0 0 0 #fff;
+        }
+      }
+    }
+    .ant-modal-body {
+      padding: 0 24px;
+    }
+    .ant-modal-footer {
+      padding-bottom: 30px;
+    }
+    .ant-modal-header {
+      padding: 30px 24px;
+    }
+    .ant-modal-footer,
+    .ant-modal-header {
+      border: 0;
+    }
+    .ant-btn {
+      width: 66px;
+      height: 36px;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(204, 204, 204, 1);
+      border-radius: 18px;
+    }
+    .ant-btn-primary {
+      width: 66px;
+      height: 36px;
+      background: rgba(3, 196, 107, 1);
+      border-radius: 18px;
+      box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+    }
+  }
+}
+
+.alreadyAddOk {
+  .infomations {
+    color: rgba(51, 51, 51, 1);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    .iconClose {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #888;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .iconDetail {
+      :global {
+        i {
+          display: block;
+          margin-bottom: 30px;
+          color: #888;
+          font-size: 60px;
+          text-align: center;
+        }
+        .anticon {
+          display: block;
+          width: 60px;
+          height: 60px;
+          margin: -10px auto 20px;
+          color: #fff;
+          font-size: 44px;
+          line-height: 68px;
+          text-align: center;
+          background: rgba(3, 196, 107, 1);
+          border-radius: 70px;
+        }
+      }
+    }
+
+    .proVersion {
+      margin-bottom: 10px;
+      color: rgba(51, 51, 51, 1);
+      font-weight: 500;
+      font-size: 18px;
+      span {
+        color: #ff6e4a;
+      }
+    }
+    .proInfo {
+      height: 36px;
+      color: rgba(51, 51, 51, 1);
+      font-size: 13px;
+      line-height: 36px;
+      background: rgba(245, 245, 245, 1);
+      border: 1px solid rgba(229, 229, 229, 1);
+      border-radius: 4px;
+
+      span {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #e5e5e5;
+      }
+    }
+  }
+  :global {
+    .ant-modal-confirm-success .ant-modal-confirm-body > .anticon {
+      display: none;
+    }
+    .anticon-question-circle {
+      display: none;
+    }
+    .ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content {
+      margin-left: 0;
+    }
+    .ant-modal-confirm-body .ant-modal-confirm-content {
+      margin-top: 0;
+    }
+    .ant-modal-confirm-btns {
+      float: none !important;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .ant-modal-confirm-btns > button:last-child {
+      width: 105px;
+      height: 36px;
+      color: #fff !important;
+      background: rgba(3, 196, 107, 1) !important;
+      border: 0 !important;
+      border-radius: 18px;
+      box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5) !important;
+    }
+    .ant-modal-confirm-btns > button:first-child {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 12px;
+      height: 18px;
+      padding: 0 5px;
+      opacity: 0;
+    }
+  }
+}

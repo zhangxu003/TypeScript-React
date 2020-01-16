@@ -1,0 +1,262 @@
+@import '~antd/lib/style/themes/default.less';
+// @import '../../../../utils/utils.less';
+:global {
+  // .ant-layout-content>div {
+  //     height: 100%;
+  //     &>:nth-child(2) {
+  //       height: 100%;
+  //     }
+  //   }
+  .import-teacher-wrapper {
+    .tit {
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 14px;
+      .division {
+        padding: 0 8px 0 4px;
+      }
+      .subTit {
+        font-size: 20px;
+      }
+    }
+  }
+  .import-students-component {
+    height: 100%;
+    background: #fff;
+    .header {
+      padding: 15px 15px;
+      border-bottom: 1px solid #e5e5e5;
+      h2 {
+        margin: 0;
+        padding: 0;
+        color: #333;
+        font-size: 14px;
+      }
+    }
+    .content {
+      height: calc(~'100% - 52px');
+      .table-box {
+        padding: 0 15px;
+        .tip {
+          padding: 15px 0;
+          p {
+            margin: 0;
+
+            i {
+              color: #9e9e9e;
+              font-size: 13px;
+            }
+            span {
+              padding-left: 8px;
+              color: #333;
+            }
+          }
+        }
+        .table {
+          position: relative;
+          border-bottom: 1px solid #e8e8e8;
+          .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+
+            .load-content {
+              text-align: center;
+              .tip {
+                color: rgba(255, 255, 255, 1);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+              }
+            }
+          }
+          .ant-table-tbody > tr {
+            &:last-child {
+              td {
+                border-bottom: none;
+              }
+            }
+          }
+          .ant-table-tbody > tr > td {
+            padding: 2px 0;
+            .ant-input {
+              padding: 0 6px;
+              border: none;
+              box-shadow: none;
+            }
+            .err {
+              margin: 0;
+              padding: 0 5px;
+              color: #ff6e4a;
+              font-size: 13px;
+              line-height: 32px;
+            }
+          }
+        }
+        .btn-group {
+          padding: 20px 0;
+          .cancel-btn {
+            width: 66px;
+            border-radius: 18px;
+          }
+          .import-btn {
+            color: #fff;
+            background: #03af60;
+            border: none;
+            border-color: #03af60;
+            border-radius: 18px;
+          }
+          .import-btn-disable {
+            width: 66px;
+            color: #fff;
+            background: #d8d8d8;
+            border-radius: 18px;
+          }
+        }
+      }
+      .operation-guidance {
+        height: 100%;
+        padding: 0 15px;
+        border-left: 1px solid #e5e5e5;
+        h2 {
+          margin: 0;
+          padding: 10px 0;
+          color: #333;
+          font-size: 14px;
+        }
+        .step-box {
+          margin-bottom: 20px;
+          h2.title {
+            padding: 5px 0;
+            color: #888;
+            font-size: 13px;
+            line-height: 20px;
+          }
+          i {
+            color: #228eff;
+            font-size: 17px !important;
+          }
+          a {
+            padding: 0 5px;
+            color: #228eff;
+            font-size: 14px;
+            text-decoration: underline;
+          }
+          p {
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 13px;
+          }
+          .template-table-box {
+            padding: 10px 0 0 0;
+            .template-table {
+              width: 96%;
+              border: 1px solid #f3f3f3;
+              box-shadow: 0 0 10px 5px #f3f3f3;
+            }
+            .template-table-tips {
+              border: 1px solid #f3f3f3;
+              box-shadow: 0 0 10px 5px #f3f3f3;
+              p {
+                height: 30px;
+                margin: 0;
+                padding: 0;
+                color: #333;
+                font-size: 13px;
+                line-height: 30px;
+                text-align: center;
+                background: #fff;
+
+                &:first-child {
+                  color: #fff;
+                  background: #a5bfd5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .import-success-modal {
+    .conent {
+      padding: 20px 0;
+      .success-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        color: #fff;
+        text-align: center;
+        background: #03c46b;
+        border-radius: 30px;
+        .success {
+          color: #fff;
+          font-size: 26px !important;
+          line-height: 60px;
+        }
+      }
+      .error-icon {
+        margin-right: 20px;
+        color: rgba(255, 110, 74, 1);
+        font-size: 23px;
+      }
+      .tip {
+        display: flex;
+        justify-content: center;
+        margin: 15px auto;
+        padding: 0 0;
+        color: rgba(41, 41, 53, 1);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        span {
+          color: rgba(51, 51, 51, 1);
+          font-size: 16px;
+        }
+      }
+      .btn-group {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .again-import-btn {
+          width: 79px;
+          height: 36px;
+          color: #fff;
+          background: rgba(3, 196, 107, 1);
+          border-radius: 18px;
+          box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+        }
+        .back-list-btn {
+          width: 92px;
+          height: 36px;
+          color: #fff;
+          background: rgba(255, 180, 0, 1);
+          border-color: #ffb400;
+          border-radius: 18px;
+          outline: 0;
+          box-shadow: 0 2px 5px 0 rgba(255, 180, 0, 0.5);
+
+          &:focus,
+          &:hover,
+          &:not([disabled]):hover {
+            border-color: transparent !important;
+            box-shadow: none !important;
+          }
+        }
+      }
+    }
+    .ant-modal-footer {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "011f5914-764b-487f-be2b-6235f6cc4340",
+  "environment": "DEV",
+  "serviceCode": "deploy-service",
+  "currentVersionPrefixInt": 10100,
+  "lastSequence": 5,
+  "version": "1.1.0.5",
+  "updateTime": "2019/11/07 02:54:39"
+}

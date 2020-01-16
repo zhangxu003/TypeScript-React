@@ -1,0 +1,251 @@
+.imageCodeBox {
+  padding: 10px 0;
+  text-align: center;
+}
+.title {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+}
+.stepBox {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.step {
+  width: 33%;
+  color: #b2b2b2;
+  font-size: 14px;
+}
+.step1 {
+  text-align: left;
+}
+.current {
+  color: #5e6cf3;
+  font-weight: bolder;
+}
+.hLine {
+  position: absolute;
+  bottom: -1px;
+  width: 116px;
+  height: 2px;
+  background: #5e6cf3;
+  transition: all 0.5s ease;
+}
+.sanjiao {
+  position: absolute;
+  bottom: 0;
+  left: 53px;
+  width: 0;
+  height: 0;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #5e6cf3;
+  border-left: 6px solid transparent;
+}
+.step1Box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  :global {
+    .drag {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+}
+.step2Box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.step3Box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.tip {
+  color: #ff6e4a;
+  font-size: 12px;
+  text-align: left;
+}
+.nextBtn {
+  width: 330px;
+  height: 40px;
+  color: #fff;
+  background: rgba(94, 108, 243, 1);
+  border-radius: 20px;
+  box-shadow: 0 2px 5px 0 rgba(34, 142, 255, 0.5);
+
+  &:hover {
+    color: #fff;
+    background: rgba(94, 108, 243, 1);
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(34, 142, 255, 0.5);
+  }
+}
+.sendCode {
+  margin: 0 0;
+  padding: 10px 10px;
+  text-align: left;
+  background: #f5f5f5;
+}
+
+.nextBtnDisable {
+  width: 330px;
+  height: 40px;
+  color: #fff;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+.backBtnTit {
+  width: 100px;
+  margin: 20px auto 0;
+  color: #5e6cf3;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.tipTxt {
+  color: #f90;
+  font-size: 12px;
+}
+
+.type {
+  width: 150px;
+  height: 36px;
+  line-height: 36px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(229, 229, 229, 1);
+  border-radius: 18px;
+}
+
+.successIcon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  background: #03c46b;
+  border-radius: 30px;
+
+  i {
+    color: #fff;
+    font-size: 26px !important;
+    line-height: 60px;
+  }
+}
+.step3Tip {
+  margin-top: 10px;
+  color: #292935;
+  font-size: 14px;
+}
+.account {
+  padding: 0 5px;
+  font-weight: bold;
+}
+.goLogin {
+  width: 330px;
+  height: 40px;
+  margin-top: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid rgba(51, 51, 51, 1);
+  border-radius: 20px;
+}
+
+.changeBox {
+  width: 430px;
+  min-height: 346px;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  :global {
+    .ant-input-affix-wrapper .ant-input-prefix {
+      left: 0;
+    }
+    .ant-input {
+      height: 60px;
+      font-size: 14px;
+      line-height: 60px;
+      text-align: left;
+      background: #fff;
+      border: none !important;
+      border-color: transparent !important;
+      border-radius: 10px;
+      outline: none;
+      -webkit-box-shadow: 0 0 0 1000px white inset;
+      &:last-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+
+    .ant-btn:hover,
+    .ant-btn:focus,
+    .ant-btn:active,
+    .ant-btn.active {
+      color: #fff;
+      text-decoration: none;
+      background: #5e6cf3;
+      box-shadow: 0 2px 5px 0 rgba(34, 142, 255, 0.5);
+    }
+    .ant-btn.disabled,
+    .ant-btn[disabled] {
+      &:hover,
+      &:focus {
+        color: rgba(0, 0, 0, 0.25);
+        background: #f5f5f5;
+        box-shadow: none;
+      }
+    }
+
+    .form {
+      .ant-form-explain {
+        display: none;
+      }
+      .has-error .ant-input {
+        border-color: transparent !important;
+        &:focus,
+        &:hover,
+        &:not([disabled]):hover {
+          border-color: transparent !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 24px;
+  margin-top: -65px;
+  margin-left: 260px;
+  border: 1px solid rgba(51, 51, 51, 1);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.greybtn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 24px;
+  margin-top: -65px;
+  margin-left: 260px;
+  color: rgba(178, 178, 178, 1);
+  border: 1px solid rgba(229, 229, 229, 1);
+  border-radius: 12px;
+  cursor: pointer;
+}

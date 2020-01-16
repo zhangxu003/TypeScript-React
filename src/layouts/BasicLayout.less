@@ -1,0 +1,101 @@
+@import (once) '~@/theme.less';
+
+:global {
+  // 左侧顶部的相关样式调整
+  .ant-pro-sider-menu-logo {
+    height: 150px;
+    padding: 0;
+    cursor: default;
+  }
+  // 缩小时左侧顶部的样式调整
+  .ant-layout-sider-collapsed {
+    .ant-pro-sider-menu-logo {
+      text-align: center;
+    }
+  }
+  // 右侧基础样式
+  .ant-pro-basicLayout-content {
+    margin: 0;
+    & > div {
+      width: 100%;
+      height: calc(100vh - 64px);
+      margin: 0 !important;
+      overflow: auto;
+      .ant-pro-grid-content {
+        height: auto;
+        min-height: auto;
+      }
+    }
+  }
+
+  // 右侧header需要在桌面版可拖动
+  .ant-pro-global-header-trigger {
+    -webkit-app-region: no-drag;
+  }
+}
+
+// 菜单顶部
+.menu-header {
+  width: 80%;
+  margin: 0 auto;
+  .logo {
+    height: 45px;
+    margin-top: 8px;
+    vertical-align: top;
+  }
+  .user {
+    &-detail {
+      display: inline-block;
+      height: 48px;
+      margin-left: 10px;
+      line-height: 24px;
+      vertical-align: middle;
+      &-name {
+        #subTitle();
+      }
+      &-role {
+        display: inline-block;
+        margin-top: 5px;
+        &-icon {
+          margin-right: 6px;
+          font-size: 18px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// 菜单主体
+.menu {
+  width: calc(100% - 20px) !important;
+  margin: 0 auto !important;
+  &:global {
+    // 右侧缩起来的时候，菜单的样式
+    &.ant-menu-inline-collapsed {
+      .ant-menu-item,
+      .ant-menu-submenu,
+      .ant-menu-submenu .ant-menu-submenu-title {
+        padding: 0 !important;
+        text-align: center !important;
+      }
+    }
+  }
+  // 选择项的样式
+  :global {
+    .ant-menu-item-selected {
+      border-radius: 5px;
+      > a {
+        font-weight: bold;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+// 面包屑相关
+.h2 {
+  #mainTitle(20px);
+}

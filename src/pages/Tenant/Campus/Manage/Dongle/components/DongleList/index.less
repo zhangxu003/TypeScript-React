@@ -1,0 +1,66 @@
+.packageListContainer {
+  .top {
+    text-align: right;
+
+    .addPackageBtn {
+      height: 36px;
+      color: #fff;
+      background: rgba(3, 196, 107, 1);
+      border-radius: 18px;
+      box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+    }
+
+    .normalBtn {
+      height: 36px;
+      margin-right: 10px;
+      color: rgba(136, 136, 136, 1);
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(204, 204, 204, 1);
+      border-radius: 18px;
+    }
+  }
+
+  .tableBox {
+    margin-top: 10px;
+
+    // a {
+    //   color: #333;
+    // }
+
+    :global {
+      .ant-table table {
+        table-layout: fixed;
+      }
+
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td {
+        padding: 7px 16px;
+      }
+    }
+
+    .cellTxt {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.flex {
+  display: flex;
+  margin-top: 24px;
+  padding-bottom: 10px;
+  color: rgba(51, 51, 51, 1);
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+  :global {
+    .Dropdown {
+      flex: 1;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

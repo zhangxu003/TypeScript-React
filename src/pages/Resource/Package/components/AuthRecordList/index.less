@@ -1,0 +1,45 @@
+.authRecordListContainer {
+  .topSortBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .right {
+      display: flex;
+    }
+
+    .tit {
+      padding-right: 5px;
+      color: #888;
+      font-size: 13px;
+    }
+  }
+
+  .tableBox {
+    margin-top: 10px;
+
+    :global {
+      .ant-table table {
+        table-layout: fixed;
+      }
+
+      .ant-table-thead > tr > th {
+        padding: 7px 16px;
+      }
+    }
+
+    .cellTxt {
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .detail {
+      a {
+        color: #333;
+      }
+    }
+  }
+}

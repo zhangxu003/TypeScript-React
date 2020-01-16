@@ -1,0 +1,41 @@
+@import '~@/theme.less';
+
+.search {
+  // 椭圆形状态
+  &-round {
+    &.search-active,
+    &:hover {
+      :global {
+        .ant-btn,
+        .ant-input {
+          border-color: @primary-color !important;
+        }
+      }
+    }
+    :global {
+      .ant-input {
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .ant-input-group-addon {
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        .ant-btn {
+          padding: 0 13px 0 9px;
+          background: @white;
+          border-color: #d9d9d9;
+          border-top-right-radius: 18px;
+          border-bottom-right-radius: 18px;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .search-icon {
+      color: @sub-color;
+    }
+  }
+}

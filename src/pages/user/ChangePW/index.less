@@ -1,0 +1,60 @@
+@import '~@/theme.less';
+
+.resetPW {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image+: url('./assets/forget_pw_page_bg.png');
+  background-image+: linear-gradient(139deg, rgba(18, 189, 154, 1) 0%, rgba(27, 205, 91, 1) 100%);
+  background-repeat: no-repeat;
+  background-position: 2% center, 0 center;
+  background-size: 46% auto, 50% 100%;
+
+  .control {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    -webkit-app-region: no-drag;
+  }
+
+  .logoBox {
+    position: fixed;
+    top: 20px;
+    left: 23px;
+    z-index: 2;
+    img {
+      width: 127px;
+      height: 32px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    background-position: center center, center center;
+    background-size: auto, 100% 100%;
+    .right {
+      width: 100%;
+    }
+
+    .control {
+      :global {
+        .anticon {
+          color: @white;
+          &:hover {
+            color: @border-color;
+          }
+        }
+      }
+    }
+  }
+}

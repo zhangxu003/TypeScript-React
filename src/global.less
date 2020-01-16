@@ -1,0 +1,229 @@
+@import './theme.less';
+@import '~antd/lib/style/core/index.less';
+@import '~antd/lib/style/components.less';
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// =========================================== 统一改写分页器样式（同蓝湖）===============================================
+.ant-pagination {
+  height: 36px !important;
+  li {
+    height: 36px !important;
+    margin-right: 0;
+    line-height: 36px !important;
+    background: #fff !important;
+    border-radius: 0;
+    &.ant-pagination-item,
+    &.ant-pagination-jump-prev,
+    &.ant-pagination-jump-next {
+      border-top: 1px solid rgba(229, 229, 229, 1) !important;
+      border-right: none !important;
+      border-bottom: 1px solid rgba(229, 229, 229, 1) !important;
+      border-left: none !important;
+    }
+    &.ant-pagination-prev {
+      border-top: 1px solid rgba(229, 229, 229, 1) !important;
+      border-bottom: 1px solid rgba(229, 229, 229, 1) !important;
+      border-left: 1px solid rgba(229, 229, 229, 1) !important;
+      border-top-left-radius: 18px;
+      border-bottom-left-radius: 18px;
+    }
+    &.ant-pagination-next {
+      border-top: 1px solid rgba(229, 229, 229, 1) !important;
+      border-right: 1px solid rgba(229, 229, 229, 1) !important;
+      border-bottom: 1px solid rgba(229, 229, 229, 1) !important;
+      border-top-right-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+  }
+
+  .ant-pagination-item-link {
+    width: 36px;
+    height: 34px !important;
+    line-height: 34px !important;
+    background: none !important;
+    border: none !important;
+  }
+
+  .ant-pagination-item-active:focus,
+  .ant-pagination-item-active:hover {
+    &,
+    & > a {
+      color: @primary-hover-color !important;
+    }
+  }
+
+  .ant-pagination-prev {
+    .ant-pagination-item-link {
+      i {
+        display: none;
+      }
+      &::before {
+        display: inline;
+        font-weight: bold;
+        font-size: 13px;
+        content: '←';
+      }
+    }
+  }
+  .ant-pagination-next {
+    .ant-pagination-item-link {
+      i {
+        display: none;
+      }
+      &::before {
+        display: inline;
+        font-weight: bold;
+        font-size: 13px;
+        content: '→';
+      }
+    }
+  }
+}
+
+// =========================================== 统一改写按钮 BUTTON 样式（同蓝湖）===============================================
+// 新增Butten 样式风格
+// 原有风格 type = primary dashed danger link
+// 新增风格同蓝湖
+// light
+//
+.ant-btn {
+  // 默认操作-default
+  &-default {
+    .button-variant-other(@primary-color, @white, @primary-color);
+    &:hover {
+      background: #dffff0;
+    }
+  }
+  // 主要操作-primary
+  &-primay {
+    .button-variant-primary(@white, @primary-color);
+  }
+
+  // 次要操作-minor
+  &-minor {
+    .button-color(@title-color, @white, @border-color);
+    &:hover,
+    &:focus {
+      .button-color(@title-color, @bg-color, @border-color);
+    }
+    &:active {
+      .button-color(@title-color, @divider-color, @border-color);
+    }
+  }
+
+  // 高亮操作-light
+  &-light {
+    .button-variant-primary(@white, @warning-color);
+  }
+
+  // 警告操作-danger
+  &-danger {
+    .button-variant-primary(@white, @error-color);
+  }
+}
+
+// =========================================== 统一改写按钮 message 样式（同蓝湖）===============================================
+// message.success
+.ant-message-notice-content {
+  padding: 0;
+  background: transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  .ant-message {
+    &-success,
+    &-error,
+    &-warning,
+    &-info,
+    &-loading {
+      padding: 20px;
+      border-radius: 4px;
+      .anticon {
+        margin-right: 15px;
+      }
+    }
+    &-success {
+      background: rgba(222, 255, 238, 1);
+      border: 1px solid rgba(191, 252, 220, 1);
+      box-shadow: 0 3px 7px 0 rgba(25, 190, 107, 0.1);
+      .anticon {
+        color: @primary-color;
+      }
+    }
+    &-error {
+      background: rgba(255, 241, 238, 1);
+      border: 1px solid rgba(249, 231, 227, 1);
+      box-shadow: 0 3px 7px 0 rgba(255, 110, 74, 0.1);
+      .anticon {
+        color: @error-color;
+      }
+    }
+    &-warning {
+      background: rgba(255, 245, 231, 1);
+      border: 1px solid rgba(250, 238, 218, 1);
+      box-shadow: 0 3px 7px 0 rgba(255, 153, 0, 0.1);
+      .anticon {
+        color: @warning-color;
+      }
+    }
+    &-info,
+    &-loading {
+      background: rgba(236, 245, 255, 1);
+      border: 1px solid rgba(219, 237, 255, 1);
+      box-shadow: 0 3px 7px 0 rgba(34, 142, 255, 0.1);
+      .anticon {
+        color: @info-color;
+      }
+    }
+  }
+}
+
+// 由于 notification 所在位置，可能在 顶部拖动区域，由于设置了 -webkit-app-region : drag; 所有该区域所有的触发事件都会失效
+.ant-notification-notice-close {
+  -webkit-app-region: no-drag;
+}

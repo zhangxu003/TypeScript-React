@@ -1,0 +1,40 @@
+.vendorListTable {
+  .name {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  :global {
+    .ant-table-bordered .ant-table-body > table {
+      table-layout: fixed;
+      border-left: none;
+      border-radius: 0;
+    }
+
+    .ant-table-thead > tr:first-child > th:first-child {
+      border-left: 1px solid #e8e8e8;
+      border-top-left-radius: 0;
+    }
+
+    .ant-table-thead > tr:first-child > th:last-child {
+      border-top-right-radius: 0;
+    }
+
+    .ant-table-thead > tr > th {
+      padding: 6px 16px;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 14px 16px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .ant-table-bordered .ant-table-tbody > tr > td {
+      border-right: none;
+    }
+  }
+}

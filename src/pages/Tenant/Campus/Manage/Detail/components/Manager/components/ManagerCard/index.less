@@ -1,0 +1,73 @@
+.managerCardContainer {
+  position: relative;
+  width: 190px;
+  margin-right: 10px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+
+  .infoBox {
+    display: flex;
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+    }
+
+    .info {
+      padding-left: 5px;
+
+      .name {
+        max-width: 115px;
+        padding-top: 8px;
+        overflow: hidden;
+        color: #333;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .vbNumber {
+        padding-top: 5px;
+
+        .logo {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+  .tagsBox {
+    padding-top: 10px;
+
+    :global {
+      .ant-tag {
+        color: #333;
+        font-size: 12px;
+        background: rgba(245, 245, 245, 1);
+        border: none;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .hoverBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    & div.hoverBtn {
+      display: block;
+    }
+  }
+}

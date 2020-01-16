@@ -1,0 +1,39 @@
+.packageDetailModal {
+  :global {
+    .ant-table table {
+      table-layout: fixed;
+    }
+
+    .ant-modal-header {
+      border-bottom: none;
+      -webkit-app-region: no-drag;
+    }
+
+    .ant-modal-body {
+      padding-top: 0;
+    }
+
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td {
+      padding: 7px 16px;
+    }
+
+    .ant-tag {
+      color: #ff6e4a;
+      font-size: 12px;
+      background: rgba(255, 110, 74, 0.1);
+      border-color: #ff6e4a;
+    }
+  }
+
+  .cellTxt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    img {
+      position: absolute;
+      left: 0;
+    }
+  }
+}

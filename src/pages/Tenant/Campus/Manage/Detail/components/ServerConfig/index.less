@@ -1,0 +1,213 @@
+.serverContainer {
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin-bottom: 0;
+  }
+
+  .tit {
+    width: 70px;
+    padding-right: 5px;
+    color: #888;
+    font-size: 14px;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .cont {
+    width: 330px;
+    height: 32px;
+    padding: 5px 10px;
+    color: #333;
+    font-size: 14px;
+    background: rgba(245, 245, 245, 1);
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-radius: 4px;
+  }
+  .datePicker {
+    input {
+      height: 32px;
+      line-height: 32px;
+      background: rgba(245, 245, 245, 1);
+    }
+    :global {
+      .ant-calendar-picker-clear {
+        display: none;
+      }
+    }
+  }
+  .stopTest {
+    button {
+      width: 68px;
+      height: 30px;
+      padding: 0;
+      font-size: 12px;
+      line-height: 30px;
+      border-radius: 15px;
+    }
+  }
+  .changeDate {
+    button {
+      width: 81px;
+      height: 30px;
+      margin-right: 10px;
+      padding: 0;
+      font-size: 12px;
+      line-height: 30px;
+      border-radius: 15px;
+    }
+  }
+}
+.days {
+  padding: 0 5px;
+  color: #ff6e4a;
+}
+:global {
+  .stopTestModal {
+    font-size: 16px;
+    .anticon {
+      display: none;
+    }
+    .ant-modal-confirm-btns {
+      .ant-btn {
+        width: 66px;
+        height: 36px;
+        padding: 0;
+        font-size: 13px;
+        line-height: 36px;
+        border-radius: 18px;
+      }
+      .ant-btn-primary {
+        background: rgba(255, 110, 74, 1);
+        border: 0;
+        box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+      }
+    }
+  }
+}
+.stopModal {
+  font-size: 16px;
+}
+.paperTitle {
+  display: flex;
+  width: 100%;
+  height: 33px;
+  padding: 0 20px;
+  color: #888;
+  line-height: 33px;
+  background: rgba(245, 245, 245, 1);
+  border-bottom: 1px solid #e5e5e5;
+  .paperNumber {
+    flex: 0 0 250px;
+  }
+  .paperName {
+    flex: 0 0 80px;
+  }
+  .paperCount {
+    flex: 0 0 90px;
+  }
+  .dateRange {
+    flex: 1;
+  }
+}
+.paperDetail {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  color: #888;
+  line-height: 50px;
+  cursor: pointer;
+  .paperNumber {
+    flex: 0 0 250px;
+  }
+  .paperName {
+    flex: 0 0 80px;
+  }
+  .paperCount {
+    flex: 0 0 90px;
+  }
+  .dateRange {
+    flex: 1;
+    :global {
+      .ant-calendar-picker-clear {
+        display: none;
+      }
+    }
+  }
+}
+.setDateRange {
+  :global {
+    .ant-modal-close-x {
+      width: 36px;
+      height: 32px;
+      font-size: 12px;
+      line-height: 32px;
+    }
+    .ant-modal-header {
+      margin: 0 20px;
+      padding-bottom: 0;
+      border: 0;
+    }
+
+    .ant-modal-footer {
+      margin: 0 20px;
+      padding-top: 0;
+      border: 0;
+
+      .ant-btn {
+        width: 66px;
+        height: 36px;
+        padding: 0;
+        font-size: 13px;
+        line-height: 36px;
+        border-radius: 18px;
+      }
+      .ant-btn-primary {
+        background: rgba(3, 196, 107, 1);
+        border: 0;
+        box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+      }
+      .ant-btn-primary-disabled,
+      .ant-btn-primary.disabled,
+      .ant-btn-primary[disabled],
+      .ant-btn-primary-disabled:hover,
+      .ant-btn-primary.disabled:hover,
+      .ant-btn-primary[disabled]:hover,
+      .ant-btn-primary-disabled:focus,
+      .ant-btn-primary.disabled:focus,
+      .ant-btn-primary[disabled]:focus,
+      .ant-btn-primary-disabled:active,
+      .ant-btn-primary.disabled:active,
+      .ant-btn-primary[disabled]:active,
+      .ant-btn-primary-disabled.active,
+      .ant-btn-primary.disabled.active,
+      .ant-btn-primary[disabled].active {
+        color: #b2b2b2;
+        text-shadow: none;
+        background-color: #f5f5f5;
+        border-color: #d9d9d9;
+        box-shadow: none;
+      }
+    }
+    .ant-list-split .ant-list-item:last-child {
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .ant-list {
+      max-height: 400px;
+      overflow: auto;
+      .ant-list-item {
+        padding: 0;
+      }
+    }
+  }
+}

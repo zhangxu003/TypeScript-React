@@ -1,0 +1,123 @@
+@import '~antd/lib/style/themes/default.less';
+// -------图片的路径-----
+@path: '@/src/assets';
+
+// ============================ 颜色 ===============================
+
+// --------base--------
+@white: #fff;
+@black: #000;
+
+// 主色
+@primary-color: #03c46b; // 主题颜色
+@primary-hover-color: #00d975; // 主题色hover
+@primary-active-color: #03af60; // 主题色hover
+
+// 辅色
+@info-color: #228eff; // 提示信息颜色
+@success-color: #03c46b; // 成功颜色
+@warning-color: #ff9900; // 警告颜色
+@error-color: #ff6e4a; // 错误颜色
+
+// 中性色
+@title-color: #333333; // 标题 Title
+@sub-color: #888888; // 辅助/图标 Sub Color
+@disabled-color: #b2b2b2; // 失效 Disabled
+@border-color: #cccccc; // 边框 Border
+@divider-color: #e5e5e5; // 分割线 Divider
+@bg-color: #f5f5f5; // 背景 Background
+
+// ------颜色通用方法--------
+
+// 通用背景色color
+#bgColor(@tag) {
+  background: @tag;
+}
+
+// 通用字体色color
+#fontColor(@tag) {
+  color: @tag;
+}
+
+// =========================== 字体文本 ==============================
+@font-family: Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei';
+
+// 字体方法
+#fontFamily() {
+  font-family: @font-family;
+}
+
+// 字体宽度
+@font-weight-normal: 400; // 正常 同 normal
+@font-weight-bold: 700; // 加粗 同 bold
+
+// 常用字体size
+@font-size-12: 12px;
+@font-size-13: 13px;
+@font-size-14: 14px;
+@font-size-16: 16px;
+@font-size-24: 24px;
+
+// 基础字体参数
+#fontBasic( @color : @title-color; @fontSize : @font-size-14; @fontWeight : @font-weight-normal;) {
+  color: @color;
+  font-weight: @fontWeight;
+  font-size: @fontSize;
+}
+
+// 主标题
+#mainTitle(@size : @font-size-16) {
+  #fontBasic(@title-color; @size; @font-weight-bold);
+}
+
+// 次级主题
+#subTitle(@size : @font-size-14) {
+  #fontBasic(@title-color; @size; @font-weight-bold);
+}
+
+// 小标题
+#minorTitle( @size : @font-size-13 ) {
+  #fontBasic(@title-color; @size; @font-weight-bold);
+}
+
+// 正文
+#mainText( @size : @font-size-14 ) {
+  #fontBasic(@title-color; @font-size-14);
+}
+
+// 辅助文本
+#subText( @size : @font-size-13 ) {
+  #fontBasic(@sub-color; @size);
+}
+
+// 失效文本
+#disabledText( @size : @font-size-14 ) {
+  #fontBasic(@disabled-color; @size);
+}
+
+// 连接文本
+#linkText( @size : @font-size-14 ) {
+  &,
+  & a {
+    cursor: pointer;
+    #fontBasic(@primary-color; @size);
+    &:hover {
+      color: @primary-hover-color;
+    }
+    &:active {
+      color: @primary-hover-active;
+    }
+  }
+}
+
+// =========================== Input 各种输入框 =============================
+// 基础高度默认设为 36px
+@input-height-base: 36px;
+@input-height-lg: 42px;
+@input-height-sm: 28px;
+
+// ============================ Button 类型 =================================
+// 基础高度默认设为 36px
+@btn-height-base: 36px;
+@btn-height-lg: 42px;
+@btn-height-sm: 28px;

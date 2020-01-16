@@ -1,0 +1,127 @@
+.checkPaperListContainer {
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .right {
+      display: flex;
+
+      .selectItem {
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .select {
+          width: 82px;
+        }
+      }
+    }
+
+    .tit {
+      padding-right: 5px;
+      color: #888;
+      font-size: 13px;
+    }
+  }
+
+  .tableBox {
+    margin-top: 10px;
+
+    :global {
+      .ant-table table {
+        table-layout: fixed;
+      }
+
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td {
+        padding: 7px 16px;
+      }
+    }
+
+    .cellTxt {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      img {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+
+  :global {
+    .ant-input-group .ant-input {
+      font-size: 12px;
+      border-top-left-radius: 18px;
+      border-bottom-left-radius: 18px;
+    }
+  }
+}
+
+.option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 36px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 13px;
+  background: rgba(3, 196, 107, 1);
+  border-radius: 18px;
+  box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+  cursor: pointer;
+}
+
+.normal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 36px;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 400;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(51, 51, 51, 1);
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.optionItem {
+  margin: 0 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+  .inputBorder {
+    flex: 1;
+    border: none !important;
+  }
+  .inputBorder:focus {
+    border: none !important;
+    box-shadow: 0 0 0 0;
+  }
+}
+
+.ImportModals {
+  width: calc(100vw - 20px) !important;
+  max-width: 1024px;
+  // height: calc(100vh - 20px);
+  min-height: 100px;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.success {
+  margin-left: 5px;
+  color: #03c46b !important;
+  font-size: 16px;
+}

@@ -1,0 +1,23 @@
+.tableBox {
+  margin-top: 10px;
+  .campusNameLen {
+    width: 145px;
+    span {
+      display: block;
+      max-width: 200px;
+      margin-left: 5px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .icon-detail {
+    margin-right: 10px;
+  }
+
+  :global {
+    .ant-table-thead > tr > th {
+      padding: 7px 16px;
+    }
+  }
+}

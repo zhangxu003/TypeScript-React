@@ -1,0 +1,52 @@
+.paperListContainer {
+  .topSortBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 3;
+
+    .right {
+      display: flex;
+    }
+
+    .tit {
+      padding-right: 5px;
+      color: #888;
+      font-size: 13px;
+    }
+  }
+
+  .tableBox {
+    margin-top: 10px;
+
+    :global {
+      .ant-table table {
+        table-layout: fixed;
+      }
+
+      .ant-table-thead>tr>th {
+        padding: 7px 16px;
+        white-space: nowrap;
+      }
+    }
+
+    .cellTxt {
+      display: inline-block;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .icon-detail {
+      margin-right: 10px;
+    }
+
+    .detail {
+      a {
+        color: #333;
+      }
+    }
+  }
+}

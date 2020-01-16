@@ -1,0 +1,96 @@
+.imageCode {
+  // padding: 10px;
+  user-select: none;
+}
+
+.imageContainer {
+  position: relative;
+  background-color: #ddd;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.reloadContainer {
+  margin: 20px 0;
+}
+
+.reloadWrapper {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reloadIco {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: center/cover no-repeat;
+}
+
+.reloadTips {
+  color: #666;
+  font-size: 14px;
+}
+
+.sliderWarpper {
+  position: relative;
+  margin: 10px 0;
+}
+
+.sliderBar {
+  padding: 10px;
+  color: #292935;
+  font-size: 14px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 42px;
+  height: 40px;
+  // border-radius: 25px;
+  transform: translateY(-50%);
+  cursor: move;
+  // background: #fff center/80% 80% no-repeat;
+  // box-shadow: 0 2px 10px 0 #333;
+}
+
+/* 提示信息 */
+.tipsContainer,
+.tipsContainerActive {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+.tipsContainerActive {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tipsIco {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: center/cover no-repeat;
+}
+
+.tipsText {
+  color: #666;
+}
