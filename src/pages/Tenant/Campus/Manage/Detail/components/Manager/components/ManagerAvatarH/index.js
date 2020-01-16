@@ -6,7 +6,7 @@ import TeacherAvatar from '@/assets/avarta_teacher.png';
 
 /**
  *
- * @author kobe
+ * @author tina.zhang
  * @date 2019-04-08
  * @class ManagerAvatarH
  * @extends {React.PureComponent}

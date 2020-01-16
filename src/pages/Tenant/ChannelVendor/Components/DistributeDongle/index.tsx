@@ -30,7 +30,7 @@ export interface IDistributeDongleState {
 
 /**
  * 绑定加密狗
- * @author leo.guo
+ * @author tina.zhang
  * @date 2019-11-18 11:43:41
  */
 const DistributeDongle: React.FC<IDistributeDongleProps> = props => {

@@ -1,6 +1,6 @@
 /**
  * 渠道商 Model
- * @author leo.guo
+ * @author tina.zhang
  * @date   2019-11-5 11:01:14
  */
 import { Reducer } from 'redux';

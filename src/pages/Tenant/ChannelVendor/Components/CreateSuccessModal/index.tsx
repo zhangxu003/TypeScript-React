@@ -14,7 +14,7 @@ export interface ICreateSuccessModal {
 
 /**
  * 渠道商创建成功弹窗
- * @author leo.guo
+ * @author tina.zhang
  * @date 2019-11-12 15:22:07
  */
 const CreateSuccessModal: React.FC<ICreateSuccessModal> = props => {

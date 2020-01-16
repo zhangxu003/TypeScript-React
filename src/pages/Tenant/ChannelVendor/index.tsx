@@ -63,7 +63,7 @@ export interface IChannelVendorState extends ConnectProps {
 
 /**
  * @description 渠道商首页
- * @author leo.guo
+ * @author tina.zhang
  * @since 2019-11-5 16:11:10
  */
 const ChannelVendor: React.FC<IChannelVendorProps> = props => {

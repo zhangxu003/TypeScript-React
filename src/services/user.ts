@@ -29,7 +29,7 @@ export async function fakeAccountLogin(params: any) {
 /**
  * 获取手机验证码
  *
- * @author kobe
+ * @author tina.zhang
  * @date 2019-03-08
  * @export
  */

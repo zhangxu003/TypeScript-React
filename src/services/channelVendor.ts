@@ -1,6 +1,6 @@
 /**
  * 渠道商接口请求服务
- * @author leo.guo
+ * @author tina.zhang
  * @date   2019-11-5 11:01:14
  * https://localhost:8000/tenant/channelvendor
  */

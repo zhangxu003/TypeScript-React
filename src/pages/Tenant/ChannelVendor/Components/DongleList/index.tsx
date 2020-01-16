@@ -18,7 +18,7 @@ export interface IDongleListProps {
 
 /**
  * 渠道商列表
- * @author leo.guo
+ * @author tina.zhang
  * @date   2019-10-25 11:31:50
  */
 const DongleList: React.FC<IDongleListProps> = props => {

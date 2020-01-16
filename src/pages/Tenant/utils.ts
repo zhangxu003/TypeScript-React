@@ -3,7 +3,7 @@ import { CodeType } from '@/models/dictionary';
 /**
  * 去除空格
  *
- * @author kobe
+ * @author tina.zhang
  * @date 2019-01-09
  * @export
  * @param {*} str

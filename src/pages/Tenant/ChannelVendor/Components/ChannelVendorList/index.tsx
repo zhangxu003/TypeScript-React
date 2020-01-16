@@ -17,7 +17,7 @@ export interface IChannelVendorListProps {
 
 /**
  * 渠道商列表
- * @author leo.guo
+ * @author tina.zhang
  * @date   2019-10-25 11:31:50
  */
 const ChannelVendorList: React.FC<IChannelVendorListProps> = props => {

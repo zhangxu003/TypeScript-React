@@ -1,7 +1,7 @@
 /**
  * @name ImageCode
  * @desc 滑动拼图验证
- * @author kobe
+ * @author tina.zhang
  *
  * @param {String} imageUrl 图片的路径
  * @param {Number} imageWidth 展示图片的宽带

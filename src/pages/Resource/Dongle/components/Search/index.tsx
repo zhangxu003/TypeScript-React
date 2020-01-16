@@ -61,7 +61,7 @@ export default class SearchTop extends React.Component<SearchTopProps, SearchTop
   };
 
   /**
-   * @Author    Winstin
+   * @Author    tina.zhang
    * @DateTime  2018-09-21
    * @copyright 搜索 筛选数据
    * @param     {[type]}    value [description]

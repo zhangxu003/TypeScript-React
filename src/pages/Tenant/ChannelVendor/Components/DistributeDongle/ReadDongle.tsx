@@ -25,7 +25,7 @@ export interface IReadDongleState {
 
 /**
  * 读取加密狗
- * @author leo.guo
+ * @author tina.zhang
  * @date 2019-11-19 09:18:52
  */
 const ReadDongle: React.FC<IReadDongleProps> = props => {

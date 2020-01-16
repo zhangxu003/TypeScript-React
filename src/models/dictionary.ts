@@ -1,5 +1,5 @@
 /*
- * @Author: jeffery.shi
+ * @Author: tina.zhang
  * @LastEditors: jeffery.shi
  * @Description: 获取全部的字典库，并且缓存到页面中
  * @Date: 2019-02-27 17:07:52

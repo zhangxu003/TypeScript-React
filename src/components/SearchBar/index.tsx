@@ -16,7 +16,7 @@ interface SearchBarState {
 /**
  * 搜索
  * onSearch 搜索callback
- * @author winstin
+ * @author tina.zhang
  */
 export default class SearchBar extends React.Component<SearchBarPops, SearchBarState> {
   searchRef = React.createRef<HTMLInputElement>();

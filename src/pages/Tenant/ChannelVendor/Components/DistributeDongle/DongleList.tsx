@@ -18,7 +18,7 @@ export interface IDongleListProps {
 
 /**
  * 已读加密狗列表
- * @author leo.guo
+ * @author tina.zhang
  * @date 2019-11-18 16:46:45
  */
 const DongleList: React.FC<IDongleListProps> = props => {

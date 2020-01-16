@@ -74,7 +74,7 @@ export default class SearchTop extends Component<CampusProps> {
   componentDidMount() {}
 
   /**
-   * @Author    tina
+   * @Author    tina.zhang
    * @DateTime  2018-10-29
    * @copyright 搜索 筛选数据
    * @param     {[type]}    value [description]

@@ -52,7 +52,7 @@ interface IDetailState {
 
 /**
  * @description 渠道商详情
- * @author leo.guo
+ * @author tina.zhang
  * @date 2019-11-7 09:47:19
  */
 const Detail: React.FC<IDetailProps> = props => {

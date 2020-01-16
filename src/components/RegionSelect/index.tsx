@@ -18,7 +18,7 @@ export interface RegionSelectProps extends ConnectProps {
 /**
  * 地区选择组件
  *
- * @author kobe
+ * @author tina.zhang
  * @date 2019-10-22
  * @export
  * @class RegionSelect

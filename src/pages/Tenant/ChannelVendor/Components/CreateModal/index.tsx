@@ -20,7 +20,7 @@ type TClick = (e: React.MouseEvent<HTMLElement, MouseEvent>) => void;
 /**
  * 创建渠道商弹窗
  * @date 2019-11-11 11:19:20
- * @author leo.guo
+ * @author tina.zhang
  */
 const CreateModal: React.FC<ICreateModalPorps> = props => {
   // 国际化
